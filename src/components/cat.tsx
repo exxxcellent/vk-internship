@@ -21,7 +21,7 @@ export default function Cat({ cat }: TCatProps) {
     };
 
     return (
-        <div className="relative sm:max-w-56 sm:max-h-56">
+        <div className="relative sm:max-w-56 sm:max-h-56 card-shadow">
             <img
                 className="w-full min-h-56 sm:w-56 sm:h-56 object-cover"
                 alt={cat.id}

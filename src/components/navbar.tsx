@@ -13,7 +13,7 @@ export default function Navbar() {
             <ul className="flex h-full flex-wrap">
                 {links.map((link) => {
                     const isActive = link.path === path;
-                    const className = `p-5 hover:bg-blue-600 ${
+                    const className = `p-5 hover:bg-blue-600 duration-200 ${
                         isActive ? 'bg-blue-700' : ''
                     }`;
 
