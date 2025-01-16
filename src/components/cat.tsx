@@ -14,16 +14,16 @@ export default function Cat({ cat }: TCatProps) {
     const toggleToFavorite = useCats((state) => state.toggleToFavorite);
 
     const className =
-        'absolute right-4 bottom-2 w-12 h-12 hover:fill-red-500 text-red-500 cursor-pointer duration-200';
+        'absolute right-[5%] bottom-[5%] w-12 h-12 hover:fill-red-500 text-red-500 cursor-pointer duration-200';
 
     const onClickHandler = (cat: TCat) => {
         toggleToFavorite(cat);
     };
 
     return (
-        <div className="relative">
+        <div className="relative sm:max-w-56 sm:max-h-56">
             <img
-                className="w-full h-52 object-cover"
+                className="w-full min-h-56 sm:w-56 sm:h-56 object-cover"
                 alt={cat.id}
                 src={cat.image.url}
             />
